@@ -1,0 +1,165 @@
+[gd_scene load_steps=3 format=3 uid="uid://drrcqojfvpc8m"]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_q72ax"]
+[ext_resource type="Texture2D" uid="uid://c1mx8wio5s0t7" path="res://downloadfile-3.jpg" id="2_aypql"]
+
+[node name="Game_UI" type="Node"]
+script = ExtResource("1_q72ax")
+
+[node name="Click_Area" type="VBoxContainer" parent="."]
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -832.0
+offset_right = -192.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="BoxContainer2" type="BoxContainer" parent="Click_Area"]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="Soul_Shards" type="Label" parent="Click_Area/BoxContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 0
+text = "Soul Shards: 0"
+horizontal_alignment = 1
+
+[node name="BoxContainer" type="BoxContainer" parent="Click_Area"]
+layout_mode = 2
+size_flags_vertical = 3
+vertical = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Click_Area/BoxContainer"]
+position = Vector2(320, 309)
+scale = Vector2(0.609375, 0.59375)
+texture = ExtResource("2_aypql")
+
+[node name="Button" type="Button" parent="Click_Area/BoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Click for Soul Shards"
+
+[node name="Necromancer_Area" type="VBoxContainer" parent="."]
+offset_top = 64.0
+offset_right = 320.0
+offset_bottom = 648.0
+
+[node name="BoxContainer" type="BoxContainer" parent="Necromancer_Area"]
+layout_mode = 2
+size_flags_vertical = 0
+vertical = true
+
+[node name="Button" type="Button" parent="Necromancer_Area/BoxContainer"]
+layout_mode = 2
+text = "Bug"
+
+[node name="BoxContainer2" type="BoxContainer" parent="Necromancer_Area"]
+layout_mode = 2
+size_flags_vertical = 0
+vertical = true
+
+[node name="Button" type="Button" parent="Necromancer_Area/BoxContainer2"]
+layout_mode = 2
+text = "Mouse"
+
+[node name="BoxContainer3" type="BoxContainer" parent="Necromancer_Area"]
+layout_mode = 2
+size_flags_vertical = 0
+vertical = true
+
+[node name="Button" type="Button" parent="Necromancer_Area/BoxContainer3"]
+layout_mode = 2
+text = "Rabbit"
+
+[node name="BoxContainer4" type="BoxContainer" parent="Necromancer_Area"]
+layout_mode = 2
+size_flags_vertical = 0
+vertical = true
+
+[node name="Button" type="Button" parent="Necromancer_Area/BoxContainer4"]
+layout_mode = 2
+text = "Crow"
+
+[node name="BoxContainer5" type="BoxContainer" parent="Necromancer_Area"]
+layout_mode = 2
+size_flags_vertical = 0
+vertical = true
+
+[node name="Button" type="Button" parent="Necromancer_Area/BoxContainer5"]
+layout_mode = 2
+text = "Cat"
+
+[node name="BoxContainer6" type="BoxContainer" parent="Necromancer_Area"]
+layout_mode = 2
+size_flags_vertical = 0
+vertical = true
+
+[node name="Button" type="Button" parent="Necromancer_Area/BoxContainer6"]
+layout_mode = 2
+text = "Wolf"
+
+[node name="BoxContainer7" type="BoxContainer" parent="Necromancer_Area"]
+layout_mode = 2
+size_flags_vertical = 0
+vertical = true
+
+[node name="Button" type="Button" parent="Necromancer_Area/BoxContainer7"]
+layout_mode = 2
+text = "Skeleton"
+
+[node name="BoxContainer8" type="BoxContainer" parent="Necromancer_Area"]
+layout_mode = 2
+size_flags_vertical = 0
+vertical = true
+
+[node name="Button" type="Button" parent="Necromancer_Area/BoxContainer8"]
+layout_mode = 2
+text = "Spirit"
+
+[node name="Shop_Area" type="VBoxContainer" parent="."]
+offset_left = 960.0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="BoxContainer" type="BoxContainer" parent="Shop_Area"]
+layout_mode = 2
+size_flags_vertical = 2
+vertical = true
+
+[node name="Button" type="Button" parent="Shop_Area/BoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 10
+text = "Soul Boost
++1 Soul Shard Generation"
+
+[connection signal="pressed" from="Click_Area/BoxContainer/Button" to="." method="_on_button_pressed"]
