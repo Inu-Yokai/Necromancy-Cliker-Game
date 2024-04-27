@@ -1,6 +1,6 @@
 extends Node
 
-var soul_shards:int = 550
+var soul_shards:int = 0
 var bug_count:int = 0
 var mouse_count:int = 0
 
