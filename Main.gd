@@ -10,7 +10,7 @@ func _ready():
 	
 func _process(delta):
 	access_summons()
-	
+	quit_to_title()
 	
 func _on_button_pressed():
 	soul_shards += 1
@@ -49,3 +49,12 @@ func mouse_shards():
 	if mouse_count >= 10:
 		soul_shards += 2
 		%Soul_Shards.text = "Soul Shards: " + str(soul_shards)
+		
+func quit_to_title():
+	if Input.is_action_just_pressed("quit"):
+		get_tree().change_scene_to_file("res://main_menu.tscn")
+		
+		
+		
+		
+		
