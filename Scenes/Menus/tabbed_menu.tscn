@@ -32,36 +32,47 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 24
+theme_override_constants/margin_left = 60
 theme_override_constants/margin_top = 24
-theme_override_constants/margin_right = 24
+theme_override_constants/margin_right = 60
 theme_override_constants/margin_bottom = 24
 
 [node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Summons/MarginContainer"]
 layout_mode = 2
-theme_override_constants/separation = 64
+theme_override_constants/separation = 20
 alignment = 1
 
-[node name="Button" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
+[node name="Bug" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
 layout_mode = 2
+text = "Undead Bug"
 
-[node name="Button2" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
+[node name="Rat" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
 layout_mode = 2
+text = "Undead Rat"
 
-[node name="Button3" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
+[node name="Rabbit" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
 layout_mode = 2
+text = "Undead Rabbit"
 
-[node name="Button4" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
+[node name="Crow" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
 layout_mode = 2
+text = "Zombie Crow"
 
-[node name="Button5" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
+[node name="Cat" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
 layout_mode = 2
+text = "Dat Dead Cat"
 
-[node name="Button6" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
+[node name="Wolf" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
 layout_mode = 2
+text = "Undead Wolf"
 
-[node name="Button7" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
+[node name="Skelton" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
 layout_mode = 2
+text = "Skeleton Bones"
+
+[node name="Spirit" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Spirit"
 
 [node name="Apprentices" type="TabBar" parent="TabContainer"]
 visible = false
@@ -75,29 +86,32 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 24
+theme_override_constants/margin_left = 60
 theme_override_constants/margin_top = 24
-theme_override_constants/margin_right = 24
+theme_override_constants/margin_right = 60
 theme_override_constants/margin_bottom = 24
 
 [node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Apprentices/MarginContainer"]
 layout_mode = 2
-theme_override_constants/separation = 64
+theme_override_constants/separation = 20
 alignment = 1
 
-[node name="Button" type="Button" parent="TabContainer/Apprentices/MarginContainer/VBoxContainer"]
+[node name="App1" type="Button" parent="TabContainer/Apprentices/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Fragment Apprentice"
+
+[node name="App2" type="Button" parent="TabContainer/Apprentices/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Bug Apprentice"
+
+[node name="App3" type="Button" parent="TabContainer/Apprentices/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Rat Apprentice"
+
+[node name="App4" type="Button" parent="TabContainer/Apprentices/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Button2" type="Button" parent="TabContainer/Apprentices/MarginContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="Button3" type="Button" parent="TabContainer/Apprentices/MarginContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="Button4" type="Button" parent="TabContainer/Apprentices/MarginContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="Button5" type="Button" parent="TabContainer/Apprentices/MarginContainer/VBoxContainer"]
+[node name="App5" type="Button" parent="TabContainer/Apprentices/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
 [node name="Button6" type="Button" parent="TabContainer/Apprentices/MarginContainer/VBoxContainer"]
