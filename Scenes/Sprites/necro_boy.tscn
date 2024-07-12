@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dk667dxvo2lei"]
+
+[ext_resource type="Texture2D" uid="uid://duwypnpotonnt" path="res://Assets/PlaceHolder/NecroBoy.png" id="1_u5tpx"]
+
+[node name="NecroBoy" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -35)
+texture = ExtResource("1_u5tpx")
