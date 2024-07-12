@@ -1,6 +1,6 @@
 extends Control
 
-@onready var souls : SoulFragment
+@onready var souls : SoulFragment = preload("res://resources/soul_fragment.tres")
 #@onready var strength_amount = null # Replace with army strength variable. Update line 18 also
 @onready var soul_fragment_amount = souls.sf_amount # Replace with soul fragment variable. Update line 22 also
 
@@ -10,7 +10,7 @@ extends Control
 
 func _ready():
 	#strength_label.text = "Army Strength: " % strength_amount
-	sf_label.text = "Soul Fragments: " % souls.sf_amount
+	sf_label.text = "Soul Fragments: %d" % souls.sf_amount
 
 
 # Update both the strength and soul fragment count

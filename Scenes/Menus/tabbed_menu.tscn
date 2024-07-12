@@ -221,5 +221,3 @@ layout_mode = 2
 
 [node name="Button7" type="Button" parent="TabContainer/Battle/MarginContainer/VBoxContainer"]
 layout_mode = 2
-
-[connection signal="pressed" from="TabContainer/Summons/MarginContainer/VBoxContainer/Bug" to="TabContainer/Summons/MarginContainer/VBoxContainer/Bug/BoxContainer/Node2D" method="_on_bug_pressed"]

@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://co31jddvgx0eh"]
+
+[ext_resource type="PackedScene" uid="uid://c5msj7hgmthv2" path="res://Scenes/Menus/tabbed_menu.tscn" id="1_htj40"]
+[ext_resource type="Script" path="res://Scripts/game.gd" id="1_yk6fx"]
+[ext_resource type="PackedScene" uid="uid://ct7ylxqhf3w1l" path="res://Scenes/Sites/gravesite.tscn" id="2_qxw2b"]
+[ext_resource type="PackedScene" uid="uid://cta0k4xd2lfdm" path="res://Scenes/Menus/overlay.tscn" id="3_st8ni"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_yk6fx")
+
+[node name="Gravesite" parent="." instance=ExtResource("2_qxw2b")]
+position = Vector2(785, 598)
+scale = Vector2(2, 2)
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Container" type="VBoxContainer" parent="UI"]
+layout_mode = 0
+offset_top = 64.0
+offset_right = 384.0
+offset_bottom = 648.0
+
+[node name="Tabbed Menu" parent="UI/Container" instance=ExtResource("1_htj40")]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Overlay" parent="UI" instance=ExtResource("3_st8ni")]
+layout_mode = 1
+offset_left = 680.0
+offset_top = 10.0
+offset_right = 680.0
+offset_bottom = 10.0
