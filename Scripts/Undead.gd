@@ -1,9 +1,10 @@
 class_name UNDEAD_MOBS
+extends Resource
 
 
-var id: String
-var name: String
-var strength: float
-var summon_time: float
-var number: int
-var summon_level: int
+@export var id: String
+@export var name: String
+@export var strength: float
+@export var summon_time: float
+@export var number: int
+@export var summon_level: int
