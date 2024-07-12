@@ -1,5 +1,5 @@
 class_name SoulFragment
-extends Resource
+extends Node
 
 
 @export var sf_amount: int = 0

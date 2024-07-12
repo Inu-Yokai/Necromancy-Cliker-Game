@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="SoulFragment" load_steps=2 format=3 uid="uid://c0mw80ar8r4w"]
+
+[ext_resource type="Script" path="res://Scripts/soul_fragment.gd" id="1_l5pai"]
+
+[resource]
+script = ExtResource("1_l5pai")
+sf_amount = 0
