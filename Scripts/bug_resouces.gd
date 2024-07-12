@@ -1,5 +1,5 @@
 extends Resource
-class_name Undead_Summon
+class_name Bug_Stats
 
 @export var id = "BG"
 @export var mob_name = "Bug"
