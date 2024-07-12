@@ -1,0 +1,71 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4v7ert1dy8os"]
+
+[ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_u5s5q"]
+[ext_resource type="Texture2D" uid="uid://ksml8iwoslu8" path="res://addons/downloadfile.jpg" id="1_ucx8s"]
+
+[node name="Main_Menu" type="Node"]
+script = ExtResource("1_u5s5q")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(1.125, 0.632813)
+texture = ExtResource("1_ucx8s")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="BoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Title"]
+modulate = Color(0, 0.6, 0, 1)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 86
+text = "Clickermancy"
+horizontal_alignment = 1
+
+[node name="Blank" type="BoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+vertical = true
+
+[node name="Continue" type="BoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="VBoxContainer/Continue"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 48
+text = "Continue"
+
+[node name="New_Game" type="BoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="VBoxContainer/New_Game"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 48
+text = "New Game"
+
+[node name="Quit" type="BoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="VBoxContainer/Quit"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 48
+text = "Quit"
+
+[node name="Blank2" type="BoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+vertical = true
+
+[connection signal="pressed" from="VBoxContainer/New_Game/Button" to="." method="new_game"]
+[connection signal="pressed" from="VBoxContainer/Quit/Button" to="." method="quit"]

@@ -1,0 +1,223 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5msj7hgmthv2"]
+
+[ext_resource type="PackedScene" uid="uid://ockmxejbbvm5" path="res://Scenes/bug.tscn" id="1_cpc3k"]
+
+[node name="Tabbed Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TabContainer" type="TabContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+tab_alignment = 1
+
+[node name="Summons" type="TabBar" parent="TabContainer"]
+layout_mode = 2
+tab_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer/Summons"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 60
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 60
+theme_override_constants/margin_bottom = 24
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Summons/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="Bug" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Undead Bug"
+
+[node name="BoxContainer" type="BoxContainer" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Bug"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -20.0
+offset_bottom = 20.0
+grow_horizontal = 0
+grow_vertical = 2
+alignment = 1
+
+[node name="Node2D" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Bug/BoxContainer" instance=ExtResource("1_cpc3k")]
+position = Vector2(20, 19.5)
+scale = Vector2(0.1, 0.1)
+
+[node name="Rat" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Undead Rat"
+
+[node name="Rabbit" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Undead Rabbit"
+
+[node name="Crow" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Zombie Crow"
+
+[node name="Cat" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Dat Dead Cat"
+
+[node name="Wolf" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Undead Wolf"
+
+[node name="Skelton" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Skeleton Bones"
+
+[node name="Spirit" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Spirit"
+
+[node name="Apprentices" type="TabBar" parent="TabContainer"]
+visible = false
+layout_mode = 2
+tab_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer/Apprentices"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 60
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 60
+theme_override_constants/margin_bottom = 24
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Apprentices/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="App1" type="Button" parent="TabContainer/Apprentices/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Fragment Apprentice"
+
+[node name="App2" type="Button" parent="TabContainer/Apprentices/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Bug Apprentice"
+
+[node name="App3" type="Button" parent="TabContainer/Apprentices/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Rat Apprentice"
+
+[node name="App4" type="Button" parent="TabContainer/Apprentices/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="App5" type="Button" parent="TabContainer/Apprentices/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="TabContainer/Apprentices/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="TabContainer/Apprentices/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Shop" type="TabBar" parent="TabContainer"]
+visible = false
+layout_mode = 2
+tab_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer/Shop"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Shop/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 64
+alignment = 1
+
+[node name="Button" type="Button" parent="TabContainer/Shop/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="TabContainer/Shop/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="TabContainer/Shop/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="TabContainer/Shop/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="TabContainer/Shop/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="TabContainer/Shop/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="TabContainer/Shop/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Battle" type="TabBar" parent="TabContainer"]
+visible = false
+layout_mode = 2
+tab_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer/Battle"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Battle/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 64
+alignment = 1
+
+[node name="Button" type="Button" parent="TabContainer/Battle/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="TabContainer/Battle/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="TabContainer/Battle/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="TabContainer/Battle/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="TabContainer/Battle/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="TabContainer/Battle/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="TabContainer/Battle/MarginContainer/VBoxContainer"]
+layout_mode = 2
