@@ -92,7 +92,7 @@ layout_mode = 2
 theme_override_constants/separation = 20
 alignment = 1
 
-[node name="App1" type="Button" parent="TabContainer/Apprentices/MarginContainer/VBoxContainer"]
+[node name="App0" type="Button" parent="TabContainer/Apprentices/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Fragment Apprentice"
 
