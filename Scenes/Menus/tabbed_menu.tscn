@@ -10,13 +10,9 @@ grow_vertical = 2
 
 [node name="TabContainer" type="TabContainer" parent="."]
 layout_mode = 1
-anchors_preset = -1
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 100.0
-offset_top = 50.0
-offset_right = -100.0
-offset_bottom = -100.0
 grow_horizontal = 2
 grow_vertical = 2
 tab_alignment = 1
@@ -114,10 +110,10 @@ layout_mode = 2
 [node name="App5" type="Button" parent="TabContainer/Apprentices/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Button6" type="Button" parent="TabContainer/Apprentices/MarginContainer/VBoxContainer"]
+[node name="App6" type="Button" parent="TabContainer/Apprentices/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Button7" type="Button" parent="TabContainer/Apprentices/MarginContainer/VBoxContainer"]
+[node name="App7" type="Button" parent="TabContainer/Apprentices/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
 [node name="Shop" type="TabBar" parent="TabContainer"]
@@ -142,25 +138,25 @@ layout_mode = 2
 theme_override_constants/separation = 64
 alignment = 1
 
-[node name="Button" type="Button" parent="TabContainer/Shop/MarginContainer/VBoxContainer"]
+[node name="Shop1" type="Button" parent="TabContainer/Shop/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Button2" type="Button" parent="TabContainer/Shop/MarginContainer/VBoxContainer"]
+[node name="Shop2" type="Button" parent="TabContainer/Shop/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Button3" type="Button" parent="TabContainer/Shop/MarginContainer/VBoxContainer"]
+[node name="Shop3" type="Button" parent="TabContainer/Shop/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Button4" type="Button" parent="TabContainer/Shop/MarginContainer/VBoxContainer"]
+[node name="Shop4" type="Button" parent="TabContainer/Shop/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Button5" type="Button" parent="TabContainer/Shop/MarginContainer/VBoxContainer"]
+[node name="Shop5" type="Button" parent="TabContainer/Shop/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Button6" type="Button" parent="TabContainer/Shop/MarginContainer/VBoxContainer"]
+[node name="Shop6" type="Button" parent="TabContainer/Shop/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Button7" type="Button" parent="TabContainer/Shop/MarginContainer/VBoxContainer"]
+[node name="Shop7" type="Button" parent="TabContainer/Shop/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
 [node name="Battle" type="TabBar" parent="TabContainer"]
@@ -185,23 +181,23 @@ layout_mode = 2
 theme_override_constants/separation = 64
 alignment = 1
 
-[node name="Button" type="Button" parent="TabContainer/Battle/MarginContainer/VBoxContainer"]
+[node name="Bat1" type="Button" parent="TabContainer/Battle/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Button2" type="Button" parent="TabContainer/Battle/MarginContainer/VBoxContainer"]
+[node name="Bat2" type="Button" parent="TabContainer/Battle/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Button3" type="Button" parent="TabContainer/Battle/MarginContainer/VBoxContainer"]
+[node name="Bat3" type="Button" parent="TabContainer/Battle/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Button4" type="Button" parent="TabContainer/Battle/MarginContainer/VBoxContainer"]
+[node name="Bat4" type="Button" parent="TabContainer/Battle/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Button5" type="Button" parent="TabContainer/Battle/MarginContainer/VBoxContainer"]
+[node name="Bat5" type="Button" parent="TabContainer/Battle/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Button6" type="Button" parent="TabContainer/Battle/MarginContainer/VBoxContainer"]
+[node name="Bat6" type="Button" parent="TabContainer/Battle/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Button7" type="Button" parent="TabContainer/Battle/MarginContainer/VBoxContainer"]
+[node name="Bat7" type="Button" parent="TabContainer/Battle/MarginContainer/VBoxContainer"]
 layout_mode = 2
