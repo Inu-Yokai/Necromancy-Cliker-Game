@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://c5msj7hgmthv2"]
 
-[ext_resource type="PackedScene" uid="uid://ockmxejbbvm5" path="res://Scenes/bug.tscn" id="1_cpc3k"]
+[ext_resource type="PackedScene" uid="uid://ockmxejbbvm5" path="res://Scenes/Old/bug.tscn" id="1_cpc3k"]
 
 [node name="Tabbed Menu" type="Control"]
 layout_mode = 3
@@ -221,3 +221,5 @@ layout_mode = 2
 
 [node name="Button7" type="Button" parent="TabContainer/Battle/MarginContainer/VBoxContainer"]
 layout_mode = 2
+
+[connection signal="pressed" from="TabContainer/Summons/MarginContainer/VBoxContainer/Bug" to="TabContainer/Summons/MarginContainer/VBoxContainer/Bug/BoxContainer/Node2D" method="_on_bug_pressed"]

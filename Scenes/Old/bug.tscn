@@ -18,9 +18,20 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Node2D" type="Node2D" groups=["Undead_Summons"]]
+[node name="Bug" type="Node2D" groups=["Undead_Summons"]]
 script = ExtResource("3_gorq8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_dblpd")
 frame_progress = 0.943601
+
+[node name="Bug_Amount" type="Label" parent="."]
+unique_name_in_owner = true
+offset_left = -640.0
+offset_top = -128.0
+offset_right = -128.0
+offset_bottom = 127.0
+theme_override_font_sizes/font_size = 128
+text = "X"
+horizontal_alignment = 2
+vertical_alignment = 1

@@ -1,8 +1,10 @@
+class_name Bug
 extends Node2D
 
-var bug_stats : Bug_Stats
-var bug_count = null
-var soul_fragment : SoulFragment
+
+var bug_count = 0
+
+
 
 func _ready():
 	pass
@@ -21,6 +23,9 @@ func _on_bug_pressed():
 
 
 func summon_bug():
-	if soul_fragment.sf_amount >= 5:
-		soul_fragment.sf_amount -= 5
+	
+	if Global.fragments >= 5:
+		Global.fragments -= 5
 		bug_count += 1
+		%Bug_Amount.text = "X" + str(bug_count)
+		Global.strength += Global.BugStats.strength
