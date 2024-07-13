@@ -1,10 +1,10 @@
 [gd_scene load_steps=3 format=3 uid="uid://drrcqojfvpc8m"]
 
-[ext_resource type="Script" path="res://Scripts/Main.gd" id="1_q72ax"]
-[ext_resource type="Texture2D" uid="uid://c1mx8wio5s0t7" path="res://addons/downloadfile-3.jpg" id="2_aypql"]
+[ext_resource type="Script" path="res://Scripts/Main.gd" id="1_uek4b"]
+[ext_resource type="Texture2D" uid="uid://c1mx8wio5s0t7" path="res://addons/downloadfile-3.jpg" id="2_x01ns"]
 
 [node name="Game_UI" type="Node"]
-script = ExtResource("1_q72ax")
+script = ExtResource("1_uek4b")
 
 [node name="Click_Area" type="VBoxContainer" parent="."]
 anchors_preset = 11
@@ -36,7 +36,7 @@ vertical = true
 [node name="Sprite2D" type="Sprite2D" parent="Click_Area/BoxContainer"]
 position = Vector2(320, 309)
 scale = Vector2(0.609375, 0.59375)
-texture = ExtResource("2_aypql")
+texture = ExtResource("2_x01ns")
 
 [node name="Button" type="Button" parent="Click_Area/BoxContainer"]
 layout_mode = 2

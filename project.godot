@@ -14,10 +14,6 @@ config/name="Clickermancy"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://art/icon.svg"
 
-[autoload]
-
-SoulShard="*res://soul_shard.gd"
-
 [input]
 
 quit={
