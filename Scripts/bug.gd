@@ -1,13 +1,7 @@
-class_name Bug
 extends Node2D
 
 
 var bug_count = 0
-
-
-
-func _ready():
-	pass
 
 
 func  _process(_delta):
@@ -20,10 +14,9 @@ func play_anim():
 
 func _on_bug_pressed():
 	summon_bug()
-
+	
 
 func summon_bug():
-	
 	if Global.fragments >= 5:
 		Global.fragments -= 5
 		bug_count += 1

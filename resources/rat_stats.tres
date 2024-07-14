@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Rat_Stats" load_steps=2 format=3 uid="uid://cr772ef5rb86k"]
+
+[ext_resource type="Script" path="res://Scripts/rat_resources.gd" id="1_cwn71"]
+
+[resource]
+script = ExtResource("1_cwn71")
+id = "RT"
+mob_name = "Rat"
+strength = 0.1
+summon_time = 3.0
+number = 0
+summon_level = 0
