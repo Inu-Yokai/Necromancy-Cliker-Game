@@ -13,11 +13,6 @@ func _ready():
 	sf_label.text = "Soul Fragments: %d" % Global.fragments
 
 
-#Temp
-func _process(delta):
-	update_lables()
-
-
 func update_lables():
 	update_soul_fragment()
 	update_army()
@@ -33,3 +28,6 @@ func update_soul_fragment(): # Call when needing to update Soul Fragment
 	var soul_fragment_amount = Global.fragments
 	sf_label.text = "Soul Fragments: %d" % soul_fragment_amount
 
+
+func _on_game_update_sf():
+	update_soul_fragment()

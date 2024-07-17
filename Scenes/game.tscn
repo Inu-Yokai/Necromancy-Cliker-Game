@@ -12,13 +12,6 @@ script = ExtResource("1_yk6fx")
 position = Vector2(785, 598)
 scale = Vector2(2, 2)
 
-[node name="Button" type="Button" parent="Gravesite"]
-offset_left = -136.0
-offset_top = -123.0
-offset_right = 96.0
-offset_bottom = 30.0
-rotation = -0.549779
-
 [node name="UI" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
@@ -42,4 +35,5 @@ offset_top = 10.0
 offset_right = 680.0
 offset_bottom = 10.0
 
-[connection signal="pressed" from="Gravesite/Button" to="." method="_on_button_pressed"]
+[connection signal="update_sf" from="." to="UI/Overlay" method="_on_game_update_sf"]
+[connection signal="sf_trigger" from="Gravesite" to="." method="_on_gravesite_sf_trigger"]

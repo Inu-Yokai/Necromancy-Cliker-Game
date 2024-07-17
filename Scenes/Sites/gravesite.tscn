@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://ct7ylxqhf3w1l"]
+[gd_scene load_steps=3 format=3 uid="uid://ct7ylxqhf3w1l"]
 
 [ext_resource type="Texture2D" uid="uid://t01ifps2lt7g" path="res://Assets/PlaceHolder/GraveHolder.png" id="1_ipfvc"]
+[ext_resource type="Script" path="res://Scripts/gravesite.gd" id="1_kcq63"]
 
-[node name="Gravesite" type="StaticBody2D"]
+[node name="Gravesite" type="Area2D"]
+script = ExtResource("1_kcq63")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2(0, -110)
@@ -11,3 +13,7 @@ polygon = PackedVector2Array(25, -112, 136, -11, 137, 12, -24, 110, -137, 15, -1
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -110)
 texture = ExtResource("1_ipfvc")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
