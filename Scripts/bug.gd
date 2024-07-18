@@ -29,6 +29,6 @@ func summon_bug():
 	# Can be copy pasted to each mob to reference base function.
 	var summon = get_tree().get_root().get_node("Game").summon_mob(cost)
 	if summon == true:
+		var power_up = get_tree().get_root().get_node("Game").update_strength(strength)
 		number += 1
 		%Bug_Amount.text = "X %d" % number
-		Global.strength += Global.BugStats.strength

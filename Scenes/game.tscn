@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://c5msj7hgmthv2" path="res://Scenes/Menus/tabbed_menu.tscn" id="1_htj40"]
 [ext_resource type="Script" path="res://Scripts/game.gd" id="1_yk6fx"]
 [ext_resource type="PackedScene" uid="uid://ct7ylxqhf3w1l" path="res://Scenes/Sites/gravesite.tscn" id="2_qxw2b"]
-[ext_resource type="PackedScene" path="res://Scenes/Menus/overlay.tscn" id="3_st8ni"]
+[ext_resource type="PackedScene" uid="uid://cta0k4xd2lfdm" path="res://Scenes/Menus/overlay.tscn" id="3_st8ni"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_yk6fx")
@@ -35,5 +35,6 @@ offset_top = 10.0
 offset_right = 680.0
 offset_bottom = 10.0
 
-[connection signal="update_sf" from="." to="UI/Overlay" method="_on_game_update_sf"]
+[connection signal="strength_up" from="." to="UI/Overlay" method="update_army"]
+[connection signal="update_sf" from="." to="UI/Overlay" method="update_soul_fragment"]
 [connection signal="sf_trigger" from="Gravesite" to="." method="_on_gravesite_sf_trigger"]
