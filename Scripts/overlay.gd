@@ -13,17 +13,12 @@ func _ready():
 	sf_label.text = "Soul Fragments: %d" % soul_fragment_amount
 
 
-func update_lables():
-	update_soul_fragment()
-	update_army()
-
-
 # Update both the strength and soul fragment count
 func update_army(): # Call when needing to update strength of Army
-	var strength_amount = Global.strength
-	strength_label.text = "Army Strength: %.2f" % strength_amount
+	var strength_amount = Global.strength # Update strength total.
+	strength_label.text = "Army Strength: %.2f" % strength_amount # Update label overlay
 
 
 func update_soul_fragment(): # Call when needing to update Soul Fragment
-	var soul_fragment_amount = Global.fragments
-	sf_label.text = "Soul Fragments: %d" % soul_fragment_amount
+	var soul_fragment_amount = Global.fragments # Update SF total
+	sf_label.text = "Soul Fragments: %d" % soul_fragment_amount # Update label overlay
