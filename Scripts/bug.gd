@@ -5,7 +5,7 @@ var bug_count = 0
 
 var id: String = "bg"
 var mob_name: String = "bug"
-var strength: float = .1
+var strength: float = .01
 var summon_time: float = 5.0
 var number: int = 0
 var cost: int = 5
