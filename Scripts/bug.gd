@@ -26,9 +26,12 @@ func _on_bug_pressed():
 
 func summon_bug():
 	# Added a passthrough common function to check if enough sf to summon.
+	# If true will update strength
 	# Can be copy pasted to each mob to reference base function.
 	var summon = get_tree().get_root().get_node("Game").summon_mob(cost)
 	if summon == true:
 		var power_up = get_tree().get_root().get_node("Game").update_strength(strength)
-		number += 1
+		number += 1 # Will need to update the '1' to a constant value so we can have variable summons
 		%Bug_Amount.text = "X %d" % number
+	else:
+		print("Not Enough")
