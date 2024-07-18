@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Rat_Stats" load_steps=2 format=3 uid="uid://cr772ef5rb86k"]
 
-[ext_resource type="Script" path="res://Scripts/rat_resources.gd" id="1_cwn71"]
+[ext_resource type="Script" path="res://Scripts/Mobs/rat_resources.gd" id="1_cwn71"]
 
 [resource]
 script = ExtResource("1_cwn71")
