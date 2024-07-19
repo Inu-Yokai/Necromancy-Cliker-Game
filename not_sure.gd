@@ -22,6 +22,7 @@ func play_anim():
 
 func _on_bug_pressed():
 	summon_bug()
+	print("pressed")
 
 
 func summon_bug():
@@ -29,6 +30,9 @@ func summon_bug():
 	# Can be copy pasted to each mob to reference base function.
 	var summon = get_tree().get_root().get_node("Game").summon_mob(cost)
 	if summon == true:
+		print("summon true")
 		number += 1
 		%Bug_Amount.text = "X %d" % number
 		Global.strength += Global.BugStats.strength
+	else:
+		print("summon false")
