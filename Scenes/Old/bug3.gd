@@ -1,10 +1,9 @@
 extends Node2D
 
+@export var stats : Bug_Stats
+
 
 var bug_count = 0
-
-
-@export var Stats : Bug_Stats
 
 
 #var id: String = "bg"
@@ -32,10 +31,10 @@ func summon_bug():
 	# Added a passthrough common function to check if enough sf to summon.
 	# If true will update strength
 	# Can be copy pasted to each mob to reference base function.
-	var summon = get_tree().get_root().get_node("Game").summon_mob(cost)
+	var summon = get_tree().get_root().get_node("Game").summon_mob(stats.cost)
 	if summon == true:
-		var power_up = get_tree().get_root().get_node("Game").update_strength(strength)
-		number += 1 # Will need to update the '1' to a constant value so we can have variable summons
-		%Bug_Amount.text = "X %d" % number
+		var power_up = get_tree().get_root().get_node("Game").update_strength(stats.strength)
+		stats.number += 1 # Will need to update the '1' to a constant value so we can have variable summons
+		%Bug_Amount.text = "X %d" % stats.number
 	else:
 		print("Not Enough")
