@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://3or2fyuarsxp"]
 
-[ext_resource type="Script" path="res://Crow.gd" id="1_eqxsf"]
+[ext_resource type="Script" path="res://Scripts/Mobs/Crow.gd" id="1_eqxsf"]
 [ext_resource type="Resource" uid="uid://b8kk40w3qywki" path="res://resources/Summons/crow_stats.tres" id="2_28cdl"]
 
 [node name="Crow" type="Node2D"]

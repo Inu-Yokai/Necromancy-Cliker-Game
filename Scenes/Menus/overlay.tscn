@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cta0k4xd2lfdm"]
 
-[ext_resource type="Script" path="res://Scripts/overlay.gd" id="1_4mqyj"]
+[ext_resource type="Script" path="res://Scripts/Main/overlay.gd" id="1_4mqyj"]
 
 [node name="Overlay" type="Control"]
 layout_mode = 3

@@ -1,14 +1,14 @@
 [gd_scene load_steps=10 format=3 uid="uid://c5msj7hgmthv2"]
 
-[ext_resource type="Script" path="res://Scripts/tabbed_menu.gd" id="1_5fda6"]
-[ext_resource type="PackedScene" uid="uid://ockmxejbbvm5" path="res://Scenes/Old/bug.tscn" id="1_cpc3k"]
-[ext_resource type="PackedScene" uid="uid://5kerq7tjcug6" path="res://Scenes/Old/rat.tscn" id="2_yo2f5"]
-[ext_resource type="PackedScene" uid="uid://yevyurv2bl84" path="res://Scenes/Old/rabbit.tscn" id="4_5j0i5"]
-[ext_resource type="PackedScene" uid="uid://3or2fyuarsxp" path="res://Scenes/Old/crow.tscn" id="5_frpvc"]
-[ext_resource type="PackedScene" uid="uid://bwfl5ouotg1rv" path="res://Scenes/Old/cat.tscn" id="6_rqlkh"]
-[ext_resource type="PackedScene" uid="uid://cdcd8ll324qwr" path="res://Scenes/Old/wolf.tscn" id="7_f5ncg"]
-[ext_resource type="PackedScene" uid="uid://co2e44oihougm" path="res://Scenes/Old/skeleton.tscn" id="8_rkq5p"]
-[ext_resource type="PackedScene" uid="uid://dvejuvq47kbnn" path="res://Scenes/Old/spirit.tscn" id="9_w5pmy"]
+[ext_resource type="Script" path="res://Scripts/Main/tabbed_menu.gd" id="1_5fda6"]
+[ext_resource type="PackedScene" uid="uid://ockmxejbbvm5" path="res://Scenes/Summons/bug.tscn" id="2_tisfn"]
+[ext_resource type="PackedScene" uid="uid://5kerq7tjcug6" path="res://Scenes/Summons/rat.tscn" id="3_k7v1v"]
+[ext_resource type="PackedScene" uid="uid://yevyurv2bl84" path="res://Scenes/Summons/rabbit.tscn" id="4_k4bn7"]
+[ext_resource type="PackedScene" uid="uid://3or2fyuarsxp" path="res://Scenes/Summons/crow.tscn" id="5_x5njv"]
+[ext_resource type="PackedScene" uid="uid://bwfl5ouotg1rv" path="res://Scenes/Summons/cat.tscn" id="6_a4t8p"]
+[ext_resource type="PackedScene" uid="uid://cdcd8ll324qwr" path="res://Scenes/Summons/wolf.tscn" id="7_ew8t5"]
+[ext_resource type="PackedScene" uid="uid://co2e44oihougm" path="res://Scenes/Summons/skeleton.tscn" id="8_ylbrf"]
+[ext_resource type="PackedScene" uid="uid://dvejuvq47kbnn" path="res://Scenes/Summons/spirit.tscn" id="9_3ahcl"]
 
 [node name="Tabbed Menu" type="Control"]
 layout_mode = 3
@@ -67,7 +67,7 @@ grow_horizontal = 0
 grow_vertical = 2
 alignment = 1
 
-[node name="Node2D" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Bug/BoxContainer" instance=ExtResource("1_cpc3k")]
+[node name="Node2D" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Bug/BoxContainer" instance=ExtResource("2_tisfn")]
 position = Vector2(20, 19.5)
 scale = Vector2(0.1, 0.1)
 
@@ -103,7 +103,7 @@ grow_horizontal = 0
 grow_vertical = 2
 alignment = 1
 
-[node name="Rat" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Rat/BoxContainer" instance=ExtResource("2_yo2f5")]
+[node name="Rat" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Rat/BoxContainer" instance=ExtResource("3_k7v1v")]
 position = Vector2(-24, 4)
 scale = Vector2(0.1, 0.1)
 
@@ -139,7 +139,7 @@ grow_horizontal = 0
 grow_vertical = 2
 alignment = 1
 
-[node name="Rabbit" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Rabbit/BoxContainer" instance=ExtResource("4_5j0i5")]
+[node name="Rabbit" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Rabbit/BoxContainer" instance=ExtResource("4_k4bn7")]
 scale = Vector2(0.1, 0.1)
 
 [node name="BoxContainer2" type="BoxContainer" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Rabbit"]
@@ -174,7 +174,7 @@ grow_horizontal = 0
 grow_vertical = 2
 alignment = 1
 
-[node name="Crow" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Crow/BoxContainer" instance=ExtResource("5_frpvc")]
+[node name="Crow" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Crow/BoxContainer" instance=ExtResource("5_x5njv")]
 scale = Vector2(0.1, 0.1)
 
 [node name="BoxContainer2" type="BoxContainer" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Crow"]
@@ -206,7 +206,7 @@ grow_horizontal = 0
 grow_vertical = 2
 alignment = 1
 
-[node name="Cat" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Cat/BoxContainer" instance=ExtResource("6_rqlkh")]
+[node name="Cat" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Cat/BoxContainer" instance=ExtResource("6_a4t8p")]
 scale = Vector2(0.1, 0.1)
 
 [node name="BoxContainer2" type="BoxContainer" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Cat"]
@@ -238,7 +238,7 @@ grow_horizontal = 0
 grow_vertical = 2
 alignment = 1
 
-[node name="Wolf" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Wolf/BoxContainer" instance=ExtResource("7_f5ncg")]
+[node name="Wolf" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Wolf/BoxContainer" instance=ExtResource("7_ew8t5")]
 scale = Vector2(0.1, 0.1)
 
 [node name="BoxContainer2" type="BoxContainer" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Wolf"]
@@ -270,7 +270,7 @@ grow_horizontal = 0
 grow_vertical = 2
 alignment = 1
 
-[node name="Skeleton" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Skelton/BoxContainer" instance=ExtResource("8_rkq5p")]
+[node name="Skeleton" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Skelton/BoxContainer" instance=ExtResource("8_ylbrf")]
 scale = Vector2(0.1, 0.1)
 
 [node name="BoxContainer2" type="BoxContainer" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Skelton"]
@@ -302,7 +302,7 @@ grow_horizontal = 0
 grow_vertical = 2
 alignment = 1
 
-[node name="Spirit" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Spirit/BoxContainer" instance=ExtResource("9_w5pmy")]
+[node name="Spirit" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Spirit/BoxContainer" instance=ExtResource("9_3ahcl")]
 scale = Vector2(0.1, 0.1)
 
 [node name="BoxContainer2" type="BoxContainer" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Spirit"]

@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://db0kqeahb2gqk"]
-
-[ext_resource type="Script" path="res://Scripts/soul_fragment.gd" id="1_iwjrn"]
-
-[node name="Node" type="Node"]
-script = ExtResource("1_iwjrn")
-sf_amount = 9

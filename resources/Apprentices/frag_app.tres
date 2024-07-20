@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Apprentices" load_steps=2 format=3 uid="uid://cahvwqym6f15l"]
+
+[ext_resource type="Script" path="res://Scripts/Apprentices/Apprentices.gd" id="1_tsqhf"]
+
+[resource]
+script = ExtResource("1_tsqhf")
+id = "FrAp"
+name = "Fragment Apprentice"
+cost = 500
+summon_amount = 1
+level = 1

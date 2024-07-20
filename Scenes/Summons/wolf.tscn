@@ -1,11 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://cdcd8ll324qwr"]
 
-[ext_resource type="Script" path="res://Wolf.gd" id="1_kowk1"]
-[ext_resource type="Resource" uid="uid://bnm0i3pxxiev4" path="res://resources/Summons/wolf_stats.tres" id="2_v50hc"]
+[ext_resource type="Script" path="res://Scripts/Mobs/Wolf.gd" id="1_5q8xy"]
+[ext_resource type="Resource" uid="uid://bnm0i3pxxiev4" path="res://resources/Summons/wolf_stats.tres" id="2_lgmlw"]
 
 [node name="Wolf" type="Node2D"]
-script = ExtResource("1_kowk1")
-stats = ExtResource("2_v50hc")
+script = ExtResource("1_5q8xy")
+stats = ExtResource("2_lgmlw")
 
 [node name="Wolf_Amount" type="Label" parent="."]
 offset_right = 40.0

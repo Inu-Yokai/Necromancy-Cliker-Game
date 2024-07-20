@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="UNDEAD_MOBS" load_steps=2 format=3 uid="uid://srl5rajtmuav"]
 
-[ext_resource type="Script" path="res://Scripts/Undead.gd" id="1_ld5nj"]
+[ext_resource type="Script" path="res://Scripts/Mobs/Undead.gd" id="1_ld5nj"]
 
 [resource]
 script = ExtResource("1_ld5nj")

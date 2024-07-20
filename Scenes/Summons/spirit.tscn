@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dvejuvq47kbnn"]
 
-[ext_resource type="Script" path="res://Spirit.gd" id="1_7vaij"]
+[ext_resource type="Script" path="res://Scripts/Mobs/Spirit.gd" id="1_7vaij"]
 [ext_resource type="Resource" uid="uid://drbo0tgmr7r7k" path="res://resources/Summons/spirit_stats.tres" id="2_krjth"]
 
 [node name="Spirit" type="Node2D"]

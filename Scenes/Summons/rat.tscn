@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://5kerq7tjcug6"]
 
-[ext_resource type="Script" path="res://Scenes/Old/rat.gd" id="1_6hyni"]
+[ext_resource type="Script" path="res://Scripts/Mobs/rat.gd" id="1_6hyni"]
 [ext_resource type="Resource" uid="uid://4byaseggmg7i" path="res://resources/Summons/rat_stats_2.tres" id="2_sef1e"]
 
 [node name="Rat" type="Node2D"]
