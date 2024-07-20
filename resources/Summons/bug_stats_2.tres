@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="UNDEAD_MOBS" load_steps=2 format=3 uid="uid://c334dcube3m33"]
+
+[ext_resource type="Script" path="res://Scripts/Undead.gd" id="1_w6drk"]
+
+[resource]
+script = ExtResource("1_w6drk")
+id = "BG"
+name = "Bug"
+strength = 0.01
+summon_time = 1.0
+number = 0
+summon_level = 0
+cost = 5

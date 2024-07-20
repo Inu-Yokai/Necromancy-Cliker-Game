@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="UNDEAD_MOBS" load_steps=2 format=3 uid="uid://bnm0i3pxxiev4"]
+
+[ext_resource type="Script" path="res://Scripts/Undead.gd" id="1_va4qw"]
+
+[resource]
+script = ExtResource("1_va4qw")
+id = "WF"
+name = "Wolf"
+strength = 2.43
+summon_time = 243.0
+number = 0
+summon_level = 0
+cost = 100

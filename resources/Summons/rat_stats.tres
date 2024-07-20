@@ -6,7 +6,7 @@
 script = ExtResource("1_cwn71")
 id = "RT"
 mob_name = "Rat"
-strength = 0.1
+strength = 0.03
 summon_time = 3.0
 number = 0
 summon_level = 0

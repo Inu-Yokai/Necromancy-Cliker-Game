@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var stats : Bug_Stats
+@export var stats : UNDEAD_MOBS
 
 
 func  _process(_delta):

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="UNDEAD_MOBS" load_steps=2 format=3 uid="uid://btp417md826ag"]
+
+[ext_resource type="Script" path="res://Scripts/Undead.gd" id="1_xe5jh"]
+
+[resource]
+script = ExtResource("1_xe5jh")
+id = "CT"
+name = "Cat"
+strength = 0.81
+summon_time = 81.0
+number = 0
+summon_level = 0
+cost = 75

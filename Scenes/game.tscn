@@ -21,7 +21,7 @@ offset_bottom = 40.0
 [node name="Container" type="VBoxContainer" parent="UI"]
 layout_mode = 0
 offset_top = 64.0
-offset_right = 384.0
+offset_right = 448.0
 offset_bottom = 648.0
 
 [node name="Tabbed Menu" parent="UI/Container" instance=ExtResource("1_htj40")]

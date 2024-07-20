@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://c7tmhm5es47ml" path="res://art/undead_bug_sprite_anim1.png" id="1_5lpck"]
 [ext_resource type="Script" path="res://Scenes/Old/bug3.gd" id="1_78gne"]
 [ext_resource type="Texture2D" uid="uid://6qaeodxoase4" path="res://art/undead_bug_sprite_anim2.png" id="2_almpu"]
-[ext_resource type="Resource" uid="uid://bjm5b3bnppdi3" path="res://resources/bug_stats.tres" id="2_ud76f"]
+[ext_resource type="Resource" uid="uid://c334dcube3m33" path="res://resources/Summons/bug_stats_2.tres" id="2_ljokv"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dblpd"]
 animations = [{
@@ -21,7 +21,7 @@ animations = [{
 
 [node name="Bug" type="Node2D" groups=["Undead_Summons"]]
 script = ExtResource("1_78gne")
-stats = ExtResource("2_ud76f")
+stats = ExtResource("2_ljokv")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_dblpd")
