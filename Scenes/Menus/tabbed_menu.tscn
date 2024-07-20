@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://c5msj7hgmthv2"]
+[gd_scene load_steps=5 format=3 uid="uid://c5msj7hgmthv2"]
 
 [ext_resource type="Script" path="res://Scripts/tabbed_menu.gd" id="1_5fda6"]
 [ext_resource type="PackedScene" uid="uid://ockmxejbbvm5" path="res://Scenes/Old/bug.tscn" id="1_cpc3k"]
 [ext_resource type="PackedScene" uid="uid://5kerq7tjcug6" path="res://Scenes/Old/rat.tscn" id="2_yo2f5"]
+[ext_resource type="PackedScene" uid="uid://yevyurv2bl84" path="res://Scenes/Old/rabbit.tscn" id="4_5j0i5"]
 
 [node name="Tabbed Menu" type="Control"]
 layout_mode = 3
@@ -90,6 +91,19 @@ scale = Vector2(0.1, 0.1)
 [node name="Rabbit" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Undead Rabbit"
+
+[node name="BoxContainer" type="BoxContainer" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Rabbit"]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -84.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="Rabbit" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Rabbit/BoxContainer" instance=ExtResource("4_5j0i5")]
+scale = Vector2(0.1, 0.1)
 
 [node name="Crow" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -245,3 +259,4 @@ layout_mode = 2
 
 [connection signal="pressed" from="TabContainer/Summons/MarginContainer/VBoxContainer/Bug" to="TabContainer/Summons/MarginContainer/VBoxContainer/Bug/BoxContainer/Node2D" method="_on_bug_pressed"]
 [connection signal="pressed" from="TabContainer/Summons/MarginContainer/VBoxContainer/Rat" to="TabContainer/Summons/MarginContainer/VBoxContainer/Rat/BoxContainer/Rat" method="_on_rat_pressed"]
+[connection signal="pressed" from="TabContainer/Summons/MarginContainer/VBoxContainer/Rabbit" to="TabContainer/Summons/MarginContainer/VBoxContainer/Rabbit/BoxContainer/Rabbit" method="_on_rabbit_pressed"]

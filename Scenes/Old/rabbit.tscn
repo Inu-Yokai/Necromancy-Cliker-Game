@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://yevyurv2bl84"]
+
+[ext_resource type="Script" path="res://Rabbit.gd" id="1_6py6v"]
+[ext_resource type="Resource" uid="uid://srl5rajtmuav" path="res://resources/undead_stats.tres" id="2_moc7e"]
+
+[node name="Rabbit" type="Node2D"]
+script = ExtResource("1_6py6v")
+stats = ExtResource("2_moc7e")
+
+[node name="Rabbit_Amount" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 128
+text = "X"

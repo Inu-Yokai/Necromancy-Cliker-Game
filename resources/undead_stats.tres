@@ -4,9 +4,10 @@
 
 [resource]
 script = ExtResource("1_ld5nj")
-id = ""
-name = ""
-strength = 0.0
-summon_time = 0.0
+id = "RB"
+name = "Rabbit"
+strength = 0.3
+summon_time = 9.0
 number = 0
 summon_level = 0
+cost = 50

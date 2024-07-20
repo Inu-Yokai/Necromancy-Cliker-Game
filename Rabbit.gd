@@ -1,21 +1,13 @@
 extends Node2D
 
-@export var stats : Bug_Stats
+@export var stats : UNDEAD_MOBS
 
 
-func  _process(_delta):
-	play_anim()
+func _on_rabbit_pressed():
+	summon_rabbit()
 
 
-func play_anim():
-	$AnimatedSprite2D.play("default")
-
-
-func _on_bug_pressed():
-	summon_bug()
-
-
-func summon_bug():
+func summon_rabbit():
 	# Added a passthrough common function to check if enough sf to summon.
 	# If true will update strength
 	# Can be copy pasted to each mob to reference base function.
@@ -23,6 +15,6 @@ func summon_bug():
 	if summon == true:
 		var power_up = get_tree().get_root().get_node("Game").update_strength(stats.strength)
 		stats.number += 1 # Will need to update the '1' to a constant value so we can have variable summons
-		%Bug_Amount.text = "X %d" % stats.number
+		$Rabbit_Amount.text = "X %d" % stats.number
 	else:
 		print("Not Enough")
