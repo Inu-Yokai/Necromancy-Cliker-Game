@@ -7,3 +7,4 @@ class_name Bug_Stats
 @export var summon_time = 0.3
 @export var number = 0
 @export var summon_level = 0
+@export var cost = 5

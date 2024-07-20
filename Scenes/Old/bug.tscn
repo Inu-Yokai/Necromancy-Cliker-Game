@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://ockmxejbbvm5"]
+[gd_scene load_steps=6 format=3 uid="uid://ockmxejbbvm5"]
 
 [ext_resource type="Texture2D" uid="uid://c7tmhm5es47ml" path="res://art/undead_bug_sprite_anim1.png" id="1_5lpck"]
+[ext_resource type="Script" path="res://Scenes/Old/bug3.gd" id="1_78gne"]
 [ext_resource type="Texture2D" uid="uid://6qaeodxoase4" path="res://art/undead_bug_sprite_anim2.png" id="2_almpu"]
-[ext_resource type="Script" path="res://Scripts/Mobs/bug.gd" id="3_gorq8"]
+[ext_resource type="Resource" uid="uid://bjm5b3bnppdi3" path="res://Resources/bug_stats.tres" id="2_ud76f"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dblpd"]
 animations = [{
@@ -19,7 +20,8 @@ animations = [{
 }]
 
 [node name="Bug" type="Node2D" groups=["Undead_Summons"]]
-script = ExtResource("3_gorq8")
+script = ExtResource("1_78gne")
+stats = ExtResource("2_ud76f")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_dblpd")
