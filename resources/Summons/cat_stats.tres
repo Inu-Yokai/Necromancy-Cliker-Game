@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="UNDEAD_MOBS" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="UNDEAD_MOBS" load_steps=2 format=3 uid="uid://btp417md826ag"]
 
 [ext_resource type="Script" path="res://Scripts/Mobs/Undead.gd" id="1_xe5jh"]
 
