@@ -4,6 +4,11 @@ extends Node2D
 @export var stats : UNDEAD_MOBS
 
 
+func _ready():
+	$Spirit_Amount.text = "X %d" % stats.number
+
+
+
 func _on_spirit_pressed():
 	summon_skeleton()
 

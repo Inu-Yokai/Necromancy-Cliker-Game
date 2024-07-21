@@ -1,30 +1,16 @@
-[gd_scene load_steps=14 format=3 uid="uid://co31jddvgx0eh"]
+[gd_scene load_steps=7 format=3 uid="uid://co31jddvgx0eh"]
 
 [ext_resource type="PackedScene" uid="uid://c5msj7hgmthv2" path="res://Scenes/Menus/tabbed_menu.tscn" id="1_htj40"]
 [ext_resource type="Script" path="res://Scripts/Main/game.gd" id="1_yk6fx"]
 [ext_resource type="PackedScene" uid="uid://ct7ylxqhf3w1l" path="res://Scenes/Sites/gravesite.tscn" id="2_qxw2b"]
 [ext_resource type="Resource" uid="uid://bjpaihowfkx3n" path="res://Scripts/Main/Economy/economy_res.tres" id="2_rtu6v"]
+[ext_resource type="Resource" path="res://SaveData/summon_save.tres" id="3_ifxcj"]
 [ext_resource type="PackedScene" uid="uid://cta0k4xd2lfdm" path="res://Scenes/Menus/overlay.tscn" id="3_st8ni"]
-[ext_resource type="Resource" uid="uid://c334dcube3m33" path="res://resources/Summons/bug_stats_2.tres" id="3_v5etg"]
-[ext_resource type="Resource" uid="uid://4byaseggmg7i" path="res://resources/Summons/rat_stats_2.tres" id="4_he2xl"]
-[ext_resource type="Resource" uid="uid://bm54ah8tjbgqr" path="res://resources/Summons/rabbit_stats.tres" id="5_7hymc"]
-[ext_resource type="Resource" uid="uid://b8kk40w3qywki" path="res://resources/Summons/crow_stats.tres" id="6_kl2di"]
-[ext_resource type="Resource" uid="uid://btp417md826ag" path="res://resources/Summons/cat_stats.tres" id="7_xf6ms"]
-[ext_resource type="Resource" uid="uid://bnm0i3pxxiev4" path="res://resources/Summons/wolf_stats.tres" id="8_wlfaf"]
-[ext_resource type="Resource" uid="uid://c4xd8jyocjbml" path="res://resources/Summons/skeleton_stats.tres" id="9_awlw7"]
-[ext_resource type="Resource" uid="uid://drbo0tgmr7r7k" path="res://resources/Summons/spirit_stats.tres" id="10_f5w78"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_yk6fx")
 currency_army = ExtResource("2_rtu6v")
-bug_path = ExtResource("3_v5etg")
-rat_path = ExtResource("4_he2xl")
-rabbit_path = ExtResource("5_7hymc")
-crow_path = ExtResource("6_kl2di")
-cat_path = ExtResource("7_xf6ms")
-wolf_path = ExtResource("8_wlfaf")
-skeleton_path = ExtResource("9_awlw7")
-spirit_path = ExtResource("10_f5w78")
+summon_save = ExtResource("3_ifxcj")
 
 [node name="Gravesite" parent="." instance=ExtResource("2_qxw2b")]
 position = Vector2(785, 598)

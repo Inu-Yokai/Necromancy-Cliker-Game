@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="UNDEAD_MOBS" load_steps=2 format=3 uid="uid://bm54ah8tjbgqr"]
+[gd_resource type="Resource" script_class="UNDEAD_MOBS" load_steps=2 format=3]
 
 [ext_resource type="Script" path="res://Scripts/Mobs/Undead.gd" id="1_e2xj3"]
 
@@ -8,6 +8,6 @@ id = "RB"
 name = "Rabbit"
 strength = 0.09
 summon_time = 9.0
-number = 0
+number = 35
 summon_level = 0
 cost = 25

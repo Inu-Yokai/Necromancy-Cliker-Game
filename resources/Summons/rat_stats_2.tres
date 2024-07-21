@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="UNDEAD_MOBS" load_steps=2 format=3 uid="uid://4byaseggmg7i"]
+[gd_resource type="Resource" script_class="UNDEAD_MOBS" load_steps=2 format=3]
 
 [ext_resource type="Script" path="res://Scripts/Mobs/Undead.gd" id="1_mwi1f"]
 
@@ -8,6 +8,6 @@ id = "RT"
 name = "Rat"
 strength = 0.03
 summon_time = 3.0
-number = 0
+number = 56
 summon_level = 0
 cost = 10

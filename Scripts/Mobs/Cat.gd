@@ -4,6 +4,10 @@ extends Node2D
 @export var stats : UNDEAD_MOBS
 
 
+func _ready():
+	$Cat_Amount.text = "X %d" % stats.number
+
+
 func _on_cat_pressed():
 	summon_cat()
 

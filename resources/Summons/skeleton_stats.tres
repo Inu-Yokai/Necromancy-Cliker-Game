@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="UNDEAD_MOBS" load_steps=2 format=3 uid="uid://c4xd8jyocjbml"]
+[gd_resource type="Resource" script_class="UNDEAD_MOBS" load_steps=2 format=3]
 
 [ext_resource type="Script" path="res://Scripts/Mobs/Undead.gd" id="1_ox0s8"]
 
@@ -8,6 +8,6 @@ id = "SN"
 name = "Skeleton"
 strength = 7.29
 summon_time = 729.0
-number = 0
+number = 11
 summon_level = 0
 cost = 250

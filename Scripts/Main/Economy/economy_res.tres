@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Economy" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Scripts/Main/Economy/economy.gd" id="1_vg15m"]
+
+[resource]
+script = ExtResource("1_vg15m")
+fragments = 105
+strength = 220.88
+gold = 0

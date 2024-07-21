@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="UNDEAD_MOBS" load_steps=2 format=3 uid="uid://btp417md826ag"]
+[gd_resource type="Resource" script_class="UNDEAD_MOBS" load_steps=2 format=3]
 
 [ext_resource type="Script" path="res://Scripts/Mobs/Undead.gd" id="1_xe5jh"]
 
@@ -8,6 +8,6 @@ id = "CT"
 name = "Cat"
 strength = 0.81
 summon_time = 81.0
-number = 0
+number = 18
 summon_level = 0
 cost = 75

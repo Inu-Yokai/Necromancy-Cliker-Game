@@ -28,7 +28,6 @@ sprite_frames = SubResource("SpriteFrames_dblpd")
 frame_progress = 0.943601
 
 [node name="Bug_Amount" type="Label" parent="."]
-unique_name_in_owner = true
 offset_left = -640.0
 offset_top = -128.0
 offset_right = -128.0

@@ -3,6 +3,10 @@ extends Node2D
 @export var stats : UNDEAD_MOBS
 
 
+func  _ready():
+	$Crow_Amount.text = "X %d" % stats.number
+
+
 func _on_crow_pressed():
 		summon_crow()
 
