@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Towns" load_steps=2 format=3 uid="uid://8hygcs0qmjn4"]
+
+[ext_resource type="Script" path="res://Resources/Towns/towns.gd" id="1_10ocl"]
+
+[resource]
+script = ExtResource("1_10ocl")
+id = ""
+town_name = ""
+town_strength = 0.0
+unit_min = 0
+unit_max = 0
+hero = false
+morale = 0
