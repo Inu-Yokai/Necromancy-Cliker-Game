@@ -1,14 +1,13 @@
 extends Node2D
 
-
 @export var stats : UNDEAD_MOBS
 
 
-func _on_rat_pressed():
-	summon_rat()
+func _on_crow_pressed():
+		summon_crow()
 
 
-func summon_rat():
+func summon_crow():
 	# Added a passthrough common function to check if enough sf to summon.
 	# If true will update strength
 	# Can be copy pasted to each mob to reference base function.
@@ -16,6 +15,7 @@ func summon_rat():
 	if summon == true:
 		var power_up = get_tree().get_root().get_node("Game").update_strength(stats.strength)
 		stats.number += 1 # Will need to update the '1' to a constant value so we can have variable summons
-		%Rat_Amount.text = "X %d" % stats.number
+		$Crow_Amount.text = "X %d" % stats.number
 	else:
 		print("Not Enough")
+

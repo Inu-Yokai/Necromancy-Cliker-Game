@@ -8,3 +8,4 @@ extends Resource
 @export var summon_time: float
 @export var number: int
 @export var summon_level: int
+@export var cost : int

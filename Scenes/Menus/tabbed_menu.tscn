@@ -1,8 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://c5msj7hgmthv2"]
+[gd_scene load_steps=10 format=3 uid="uid://c5msj7hgmthv2"]
 
-[ext_resource type="Script" path="res://Scripts/tabbed_menu.gd" id="1_5fda6"]
-[ext_resource type="PackedScene" uid="uid://ockmxejbbvm5" path="res://Scenes/Old/bug.tscn" id="1_cpc3k"]
-[ext_resource type="PackedScene" uid="uid://5kerq7tjcug6" path="res://Scenes/Old/rat.tscn" id="2_yo2f5"]
+[ext_resource type="Script" path="res://Scripts/Main/tabbed_menu.gd" id="1_5fda6"]
+[ext_resource type="PackedScene" uid="uid://ockmxejbbvm5" path="res://Scenes/Summons/bug.tscn" id="2_tisfn"]
+[ext_resource type="PackedScene" uid="uid://5kerq7tjcug6" path="res://Scenes/Summons/rat.tscn" id="3_k7v1v"]
+[ext_resource type="PackedScene" uid="uid://yevyurv2bl84" path="res://Scenes/Summons/rabbit.tscn" id="4_k4bn7"]
+[ext_resource type="PackedScene" uid="uid://3or2fyuarsxp" path="res://Scenes/Summons/crow.tscn" id="5_x5njv"]
+[ext_resource type="PackedScene" uid="uid://bwfl5ouotg1rv" path="res://Scenes/Summons/cat.tscn" id="6_a4t8p"]
+[ext_resource type="PackedScene" uid="uid://cdcd8ll324qwr" path="res://Scenes/Summons/wolf.tscn" id="7_ew8t5"]
+[ext_resource type="PackedScene" uid="uid://co2e44oihougm" path="res://Scenes/Summons/skeleton.tscn" id="8_ylbrf"]
+[ext_resource type="PackedScene" uid="uid://dvejuvq47kbnn" path="res://Scenes/Summons/spirit.tscn" id="9_3ahcl"]
 
 [node name="Tabbed Menu" type="Control"]
 layout_mode = 3
@@ -54,16 +60,30 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -40.0
-offset_top = -20.0
-offset_bottom = 20.0
+offset_left = -68.0
+offset_top = -19.5
+offset_bottom = 20.5
 grow_horizontal = 0
 grow_vertical = 2
 alignment = 1
 
-[node name="Node2D" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Bug/BoxContainer" instance=ExtResource("1_cpc3k")]
+[node name="Node2D" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Bug/BoxContainer" instance=ExtResource("2_tisfn")]
 position = Vector2(20, 19.5)
 scale = Vector2(0.1, 0.1)
+
+[node name="BoxContainer2" type="BoxContainer" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Bug"]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 68.0
+grow_vertical = 2
+
+[node name="Cost" type="Label" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Bug/BoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Cost: 5"
+vertical_alignment = 1
 
 [node name="Rat" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -76,40 +96,228 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -156.0
+offset_left = -68.0
 offset_top = -15.5
 offset_bottom = 15.5
 grow_horizontal = 0
 grow_vertical = 2
 alignment = 1
 
-[node name="Rat" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Rat/BoxContainer" instance=ExtResource("2_yo2f5")]
-position = Vector2(88, 4)
+[node name="Rat" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Rat/BoxContainer" instance=ExtResource("3_k7v1v")]
+position = Vector2(-24, 4)
 scale = Vector2(0.1, 0.1)
+
+[node name="BoxContainer2" type="BoxContainer" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Rat"]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 68.0
+grow_vertical = 2
+
+[node name="Cost" type="Label" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Rat/BoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Cost: 10"
+vertical_alignment = 1
 
 [node name="Rabbit" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Undead Rabbit"
 
+[node name="BoxContainer" type="BoxContainer" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Rabbit"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -68.0
+offset_top = -14.5
+offset_bottom = 15.5
+grow_horizontal = 0
+grow_vertical = 2
+alignment = 1
+
+[node name="Rabbit" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Rabbit/BoxContainer" instance=ExtResource("4_k4bn7")]
+scale = Vector2(0.1, 0.1)
+
+[node name="BoxContainer2" type="BoxContainer" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Rabbit"]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 68.0
+grow_vertical = 2
+
+[node name="Cost" type="Label" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Rabbit/BoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Cost: 25"
+vertical_alignment = 1
+
 [node name="Crow" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Zombie Crow"
+
+[node name="BoxContainer" type="BoxContainer" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Crow"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -68.0
+offset_top = -15.5
+offset_bottom = 15.5
+grow_horizontal = 0
+grow_vertical = 2
+alignment = 1
+
+[node name="Crow" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Crow/BoxContainer" instance=ExtResource("5_x5njv")]
+scale = Vector2(0.1, 0.1)
+
+[node name="BoxContainer2" type="BoxContainer" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Crow"]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 68.0
+grow_vertical = 2
+
+[node name="Cost" type="Label" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Crow/BoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Cost: 50"
+vertical_alignment = 1
 
 [node name="Cat" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Dat Dead Cat"
 
+[node name="BoxContainer" type="BoxContainer" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Cat"]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -68.0
+grow_horizontal = 0
+grow_vertical = 2
+alignment = 1
+
+[node name="Cat" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Cat/BoxContainer" instance=ExtResource("6_a4t8p")]
+scale = Vector2(0.1, 0.1)
+
+[node name="BoxContainer2" type="BoxContainer" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Cat"]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 68.0
+grow_vertical = 2
+
+[node name="Cost" type="Label" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Cat/BoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Cost: 75"
+vertical_alignment = 1
+
 [node name="Wolf" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Undead Wolf"
+
+[node name="BoxContainer" type="BoxContainer" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Wolf"]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -68.0
+grow_horizontal = 0
+grow_vertical = 2
+alignment = 1
+
+[node name="Wolf" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Wolf/BoxContainer" instance=ExtResource("7_ew8t5")]
+scale = Vector2(0.1, 0.1)
+
+[node name="BoxContainer2" type="BoxContainer" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Wolf"]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 68.0
+grow_vertical = 2
+
+[node name="Cost" type="Label" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Wolf/BoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Cost: 100"
+vertical_alignment = 1
 
 [node name="Skelton" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Skeleton Bones"
 
+[node name="BoxContainer" type="BoxContainer" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Skelton"]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -68.0
+grow_horizontal = 0
+grow_vertical = 2
+alignment = 1
+
+[node name="Skeleton" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Skelton/BoxContainer" instance=ExtResource("8_ylbrf")]
+scale = Vector2(0.1, 0.1)
+
+[node name="BoxContainer2" type="BoxContainer" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Skelton"]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 68.0
+grow_vertical = 2
+
+[node name="Cost" type="Label" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Skelton/BoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Cost: 250"
+vertical_alignment = 1
+
 [node name="Spirit" type="Button" parent="TabContainer/Summons/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Spirit"
+
+[node name="BoxContainer" type="BoxContainer" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Spirit"]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -68.0
+grow_horizontal = 0
+grow_vertical = 2
+alignment = 1
+
+[node name="Spirit" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Spirit/BoxContainer" instance=ExtResource("9_3ahcl")]
+scale = Vector2(0.1, 0.1)
+
+[node name="BoxContainer2" type="BoxContainer" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Spirit"]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 68.0
+grow_vertical = 2
+
+[node name="Cost" type="Label" parent="TabContainer/Summons/MarginContainer/VBoxContainer/Spirit/BoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Cost: 500"
+vertical_alignment = 1
 
 [node name="Apprentices" type="TabBar" parent="TabContainer"]
 visible = false
@@ -245,3 +453,9 @@ layout_mode = 2
 
 [connection signal="pressed" from="TabContainer/Summons/MarginContainer/VBoxContainer/Bug" to="TabContainer/Summons/MarginContainer/VBoxContainer/Bug/BoxContainer/Node2D" method="_on_bug_pressed"]
 [connection signal="pressed" from="TabContainer/Summons/MarginContainer/VBoxContainer/Rat" to="TabContainer/Summons/MarginContainer/VBoxContainer/Rat/BoxContainer/Rat" method="_on_rat_pressed"]
+[connection signal="pressed" from="TabContainer/Summons/MarginContainer/VBoxContainer/Rabbit" to="TabContainer/Summons/MarginContainer/VBoxContainer/Rabbit/BoxContainer/Rabbit" method="_on_rabbit_pressed"]
+[connection signal="pressed" from="TabContainer/Summons/MarginContainer/VBoxContainer/Crow" to="TabContainer/Summons/MarginContainer/VBoxContainer/Crow/BoxContainer/Crow" method="_on_crow_pressed"]
+[connection signal="pressed" from="TabContainer/Summons/MarginContainer/VBoxContainer/Cat" to="TabContainer/Summons/MarginContainer/VBoxContainer/Cat/BoxContainer/Cat" method="_on_cat_pressed"]
+[connection signal="pressed" from="TabContainer/Summons/MarginContainer/VBoxContainer/Wolf" to="TabContainer/Summons/MarginContainer/VBoxContainer/Wolf/BoxContainer/Wolf" method="_on_wolf_pressed"]
+[connection signal="pressed" from="TabContainer/Summons/MarginContainer/VBoxContainer/Skelton" to="TabContainer/Summons/MarginContainer/VBoxContainer/Skelton/BoxContainer/Skeleton" method="_on_skelton_pressed"]
+[connection signal="pressed" from="TabContainer/Summons/MarginContainer/VBoxContainer/Spirit" to="TabContainer/Summons/MarginContainer/VBoxContainer/Spirit/BoxContainer/Spirit" method="_on_spirit_pressed"]
