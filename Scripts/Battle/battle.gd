@@ -4,7 +4,10 @@ extends Node
 signal update_battle
 
 
-var player_army := 1.0 # Temp link to army strength
+var currency_army : Economy
+
+
+var player_army := currency_army.fragments # Temp link to army strength
 var enemy_army := 1.0 # Temp link to town strength
 var player_roll : float
 var enemy_roll : float
@@ -32,3 +35,4 @@ func min_thresh(army):
 	# Creates a minimum amount to modify roll range and set least damage amount.
 	var floor = army * .1
 	return floor
+
