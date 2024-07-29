@@ -1,6 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://dxn5ut86m0sff"]
+[gd_scene load_steps=3 format=3 uid="uid://dxn5ut86m0sff"]
 
 [ext_resource type="Script" path="res://Scripts/Battle/battle.gd" id="1_3ppmp"]
+[ext_resource type="PackedScene" uid="uid://oj0pjj86ovjh" path="res://Scenes/Menus/battle_bars.tscn" id="2_5wggs"]
 
 [node name="Battle" type="Node2D"]
 script = ExtResource("1_3ppmp")
+
+[node name="Battle Bars" parent="." instance=ExtResource("2_5wggs")]
+
+[connection signal="update_battle" from="." to="Battle Bars" method="_on_update_battle"]

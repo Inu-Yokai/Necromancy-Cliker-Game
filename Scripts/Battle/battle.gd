@@ -7,8 +7,8 @@ signal update_battle
 var currency_army : Economy
 
 
-var player_army := currency_army.fragments # Temp link to army strength
-var enemy_army := 1.0 # Temp link to town strength
+var player_army := 10.0#currency_army.fragments # Temp link to army strength
+var enemy_army := 10.0 # Temp link to town strength
 var player_roll : float
 var enemy_roll : float
 
