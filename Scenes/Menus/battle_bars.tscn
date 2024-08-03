@@ -1,9 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://oj0pjj86ovjh"]
+[gd_scene load_steps=3 format=3 uid="uid://oj0pjj86ovjh"]
 
 [ext_resource type="Script" path="res://Scripts/Battle/battle_bars.gd" id="1_afm6m"]
-[ext_resource type="Texture2D" uid="uid://cli7c3nj0ij0a" path="res://Assets/PlaceHolder/UI/70 progress bars-55.png" id="2_dvhtw"]
 [ext_resource type="Texture2D" uid="uid://dnt14ji4jovh5" path="res://Assets/PlaceHolder/UI/70 progress bars-53.png" id="3_ridf7"]
-[ext_resource type="Texture2D" uid="uid://cpxn442c87y7o" path="res://Assets/PlaceHolder/UI/70 progress bars-54.png" id="4_577e7"]
 
 [node name="Battle Bars" type="Control"]
 layout_mode = 3
@@ -15,21 +13,35 @@ grow_vertical = 2
 script = ExtResource("1_afm6m")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 1.0
+grow_horizontal = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
 layout_mode = 2
+alignment = 1
 
 [node name="Player Army" type="TextureProgressBar" parent="MarginContainer/HBoxContainer"]
 layout_mode = 2
 step = 0.0
 value = 50.0
-texture_under = ExtResource("2_dvhtw")
 texture_over = ExtResource("3_ridf7")
-texture_progress = ExtResource("4_577e7")
 texture_progress_offset = Vector2(10, 0)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "TURNS"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "10"
 
 [node name="Enemy Army" type="TextureProgressBar" parent="MarginContainer/HBoxContainer"]
 layout_mode = 2
+texture_over = ExtResource("3_ridf7")

@@ -7,5 +7,17 @@
 script = ExtResource("1_3ppmp")
 
 [node name="Battle Bars" parent="." instance=ExtResource("2_5wggs")]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.0
+offset_left = 608.0
+offset_top = 20.0
+offset_right = 608.0
+offset_bottom = 20.0
+grow_vertical = 1
+scale = Vector2(0.5, 0.5)
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
 [connection signal="update_battle" from="." to="Battle Bars" method="_on_update_battle"]
