@@ -33,6 +33,6 @@ func battle(player_army, enemy_army):
 
 func min_thresh(army):
 	# Creates a minimum amount to modify roll range and set least damage amount.
-	var floor = army * .1
-	return floor
+	var army_floor = army * .1
+	return army_floor
 
