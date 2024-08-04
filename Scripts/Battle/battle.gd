@@ -2,15 +2,18 @@ extends Node
 
 
 signal update_battle
+signal end_game
 
 
 var currency_army : Economy
 
 
 var player_army := 10.0#currency_army.fragments # Temp link to army strength
+var player_total := player_army
 var enemy_army := 10.0 # Temp link to town strength
 var player_roll : float
 var enemy_roll : float
+var player_win :bool
 
 
 func battle(player_army, enemy_army):
@@ -28,7 +31,14 @@ func battle(player_army, enemy_army):
 		else:
 			player_army -= player_floor
 			enemy_army -= enemy_floor
-		# Update Bars
+			#Update Bars
+	if player_army <= 0:
+		player_win = false
+		emit_signal("end_game", player_win, player_total)
+	else:
+		player_win = true
+		player_total -= player_army
+		emit_signal("end_game", player_win, player_total)
 
 
 func min_thresh(army):
