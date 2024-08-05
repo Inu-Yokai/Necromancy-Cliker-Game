@@ -77,3 +77,5 @@ func _on_auto_save_timer_timeout():
 	print("GAME SAVED")
 
 
+func _town_check():
+	print("Town Check")
