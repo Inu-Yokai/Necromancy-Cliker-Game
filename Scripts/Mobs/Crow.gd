@@ -17,7 +17,7 @@ func summon_crow():
 	# Can be copy pasted to each mob to reference base function.
 	var summon = get_tree().get_root().get_node("Game").summon_mob(stats.cost)
 	if summon == true:
-		var power_up = get_tree().get_root().get_node("Game").update_strength(stats.strength)
+		#var power_up = get_tree().get_root().get_node("Game").update_strength(stats.strength)
 		stats.number += 1 # Will need to update the '1' to a constant value so we can have variable summons
 		$Crow_Amount.text = "X %d" % stats.number
 	else:

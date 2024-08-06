@@ -1,5 +1,5 @@
 extends Resource
-class_name Towns
+class_name TOWNS
 
 
 @export var id :String
@@ -8,4 +8,4 @@ class_name Towns
 @export var unit_min : int
 @export var unit_max : int
 @export var hero : bool
-@export var morale : int
+@export var morale : float

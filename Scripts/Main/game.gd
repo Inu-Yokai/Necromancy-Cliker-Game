@@ -24,6 +24,7 @@ static  var ref : GAME
 signal update_sf
 signal strength_up
 
+
 ## Singleton Check.
 func _singelton_check() -> void:
 	if not ref:
@@ -52,6 +53,7 @@ func _enter_tree() -> void:
 
 func _ready():
 	update_strength(0)
+	get_node("Battle").hide()
 
 
 # Created base summon mob function for all mobs. Just pass along mob costs
@@ -77,3 +79,12 @@ func _on_auto_save_timer_timeout():
 	print("GAME SAVED")
 
 
+func _town_check(stats):
+	battle_show()
+	get_node("Battle").battle(currency_army.strength,stats.town_strength)
+
+
+func battle_show():
+	get_node("UI").hide()
+	get_node("Gravesite").hide()
+	get_node("Battle").show()
