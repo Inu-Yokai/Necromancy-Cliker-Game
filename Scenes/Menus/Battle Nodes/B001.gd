@@ -6,5 +6,9 @@ extends Button
 
 func _ready():
 	var button = $"."
-	var upper_node = get_tree().get_root().get_node("Game")
-	button.pressed.connect(upper_node, "_town_check")
+	button.text = town_resource.town_name
+	button.pressed.connect(press_battle)
+
+
+func press_battle():
+	get_tree().get_root().get_node("Game")._town_check(town_resource)

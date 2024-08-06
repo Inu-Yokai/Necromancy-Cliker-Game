@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://co31jddvgx0eh"]
+[gd_scene load_steps=15 format=3 uid="uid://co31jddvgx0eh"]
 
 [ext_resource type="PackedScene" uid="uid://c5msj7hgmthv2" path="res://Scenes/Menus/tabbed_menu.tscn" id="1_htj40"]
 [ext_resource type="Script" path="res://Scripts/Main/game.gd" id="1_yk6fx"]
@@ -13,6 +13,7 @@
 [ext_resource type="Resource" uid="uid://bnm0i3pxxiev4" path="res://resources/Summons/wolf_stats.tres" id="8_wlfaf"]
 [ext_resource type="Resource" uid="uid://c4xd8jyocjbml" path="res://resources/Summons/skeleton_stats.tres" id="9_awlw7"]
 [ext_resource type="Resource" uid="uid://drbo0tgmr7r7k" path="res://resources/Summons/spirit_stats.tres" id="10_f5w78"]
+[ext_resource type="PackedScene" uid="uid://dxn5ut86m0sff" path="res://Scenes/battle.tscn" id="14_q7r2f"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_yk6fx")
@@ -56,6 +57,9 @@ offset_bottom = 10.0
 [node name="Auto_Save_Timer" type="Timer" parent="."]
 wait_time = 15.0
 autostart = true
+
+[node name="Battle" parent="." instance=ExtResource("14_q7r2f")]
+visible = false
 
 [connection signal="strength_up" from="." to="UI/Overlay" method="update_army"]
 [connection signal="update_sf" from="." to="UI/Overlay" method="update_soul_fragment"]

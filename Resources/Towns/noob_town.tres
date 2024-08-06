@@ -4,10 +4,10 @@
 
 [resource]
 script = ExtResource("1_vweji")
-id = ""
-town_name = ""
-town_strength = 0.0
+id = "NT"
+town_name = "Noob Town"
+town_strength = 25.0
 unit_min = 0
-unit_max = 0
+unit_max = 2
 hero = false
-morale = 0.0
+morale = 0.1
