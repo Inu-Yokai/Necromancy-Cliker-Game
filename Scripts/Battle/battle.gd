@@ -11,6 +11,7 @@ var currency_army : Economy
 var player_roll : float
 var enemy_roll : float
 var player_win :bool
+var damage : float
 
 
 func battle(player_army, enemy_army):
@@ -21,21 +22,23 @@ func battle(player_army, enemy_army):
 	var enemy_floor = min_thresh(enemy_army)
 	await get_tree().create_timer(3.0).timeout
 	# Continue until either army is at or below 0
-	while player_army >= 0 or enemy_army >= 0:
+	while player_army >= 0 and enemy_army >= 0:
 		player_roll = randf_range(player_floor, player_army)
-		print("Player Roll:",player_roll)
 		enemy_roll = randf_range(enemy_floor, enemy_army)
-		print("Enemy Roll: ", enemy_roll)
 		if player_roll > enemy_roll:
-			enemy_army -= player_army
+			damage = player_roll - enemy_roll
+			enemy_army -= damage
 		elif player_roll < enemy_roll:
+			damage = enemy_roll - player_floor
 			player_army -= enemy_army
 		else:
 			player_army -= player_floor
 			enemy_army -= enemy_floor
+		print(damage)
+		get_node("Battle Bars")._on_update_battle(player_army, enemy_army)
 			#Update Bars
 		print("Player total: ",player_army, " Enemy total: ",enemy_army)
-		await get_tree().create_timer(10.0).timeout
+		await get_tree().create_timer(8.0).timeout
 	if player_army <= 0:
 		player_win = false
 		emit_signal("end_game", player_win, player_total)

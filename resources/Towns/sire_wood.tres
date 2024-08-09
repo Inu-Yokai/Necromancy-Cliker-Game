@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="TOWNS" load_steps=2 format=3 uid="uid://c8herblfi3wfw"]
+
+[ext_resource type="Script" path="res://resources/Towns/towns.gd" id="1_ydboo"]
+
+[resource]
+script = ExtResource("1_ydboo")
+id = "SW"
+town_name = "Sire Woods"
+town_strength = 225.0
+unit_min = 0
+unit_max = 4
+hero = false
+morale = 1.0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://c5msj7hgmthv2"]
+[gd_scene load_steps=12 format=3 uid="uid://c5msj7hgmthv2"]
 
 [ext_resource type="PackedScene" uid="uid://ockmxejbbvm5" path="res://Scenes/Summons/bug.tscn" id="2_tisfn"]
 [ext_resource type="PackedScene" uid="uid://5kerq7tjcug6" path="res://Scenes/Summons/rat.tscn" id="3_k7v1v"]
@@ -9,7 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://co2e44oihougm" path="res://Scenes/Summons/skeleton.tscn" id="8_ylbrf"]
 [ext_resource type="PackedScene" uid="uid://dvejuvq47kbnn" path="res://Scenes/Summons/spirit.tscn" id="9_3ahcl"]
 [ext_resource type="Script" path="res://Scenes/Menus/Battle Nodes/B001.gd" id="10_0jjux"]
-[ext_resource type="Resource" uid="uid://co63ddgdjltex" path="res://resources/Towns/Noob_Town.tres" id="11_8hca3"]
+[ext_resource type="Resource" uid="uid://co63ddgdjltex" path="res://resources/Towns/noob_town.tres" id="11_8hca3"]
+[ext_resource type="Resource" uid="uid://c8herblfi3wfw" path="res://resources/Towns/sire_wood.tres" id="11_kd54d"]
 
 [node name="Tabbed Menu" type="Control"]
 layout_mode = 3
@@ -434,6 +435,11 @@ alignment = 1
 layout_mode = 2
 script = ExtResource("10_0jjux")
 town_resource = ExtResource("11_8hca3")
+
+[node name="B002" type="Button" parent="TabContainer/Battle/MarginContainer/VBoxContainer" groups=["Battle"]]
+layout_mode = 2
+script = ExtResource("10_0jjux")
+town_resource = ExtResource("11_kd54d")
 
 [connection signal="pressed" from="TabContainer/Summons/MarginContainer/VBoxContainer/Bug" to="TabContainer/Summons/MarginContainer/VBoxContainer/Bug/BoxContainer/Node2D" method="_on_bug_pressed"]
 [connection signal="pressed" from="TabContainer/Summons/MarginContainer/VBoxContainer/Rat" to="TabContainer/Summons/MarginContainer/VBoxContainer/Rat/BoxContainer/Rat" method="_on_rat_pressed"]
