@@ -17,6 +17,9 @@ class_name GAME
 @export var spirit_path : UNDEAD_MOBS
 
 
+var mob_list = [bug_path, rat_path, rabbit_path, crow_path, cat_path, wolf_path, skeleton_path, spirit_path]
+
+
 ## Singleton Reference.
 static  var ref : GAME
 
@@ -88,3 +91,10 @@ func battle_show():
 	get_node("UI").hide()
 	get_node("Gravesite").hide()
 	get_node("Battle").show()
+
+
+func after_battle():
+	get_node("UI").show()
+	get_node("Gravesite").show()
+	get_node("Battle").hide()
+	get_node("Results").show()

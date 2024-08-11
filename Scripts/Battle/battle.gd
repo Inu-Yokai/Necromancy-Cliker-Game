@@ -26,11 +26,12 @@ func battle(player_army, enemy_army):
 		player_roll = randf_range(player_floor, player_army)
 		enemy_roll = randf_range(enemy_floor, enemy_army)
 		if player_roll > enemy_roll:
-			damage = player_roll - enemy_roll
+			damage = snapped(player_roll - enemy_roll, 0.01)
 			enemy_army -= damage
+			player_army -= snapped(damage / 4, 1)
 		elif player_roll < enemy_roll:
-			damage = enemy_roll - player_floor
-			player_army -= enemy_army
+			damage = snapped(enemy_roll - player_roll, 0.01)
+			player_army -= damage
 		else:
 			player_army -= player_floor
 			enemy_army -= enemy_floor
@@ -50,12 +51,5 @@ func battle(player_army, enemy_army):
 
 func min_thresh(army):
 	# Creates a minimum amount to modify roll range and set least damage amount.
-	var army_floor = army * .1
-	return army_floor
-
-
-func timer_2():
-	var timer = Timer.new()
-	timer.wait_time = 3
-	timer.one_shot = true
-
+	var army_floor = army * .4
+	return snapped(army_floor, 0.01)

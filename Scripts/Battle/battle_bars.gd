@@ -10,7 +10,7 @@ func bar_ready(player_max, enemy_max):
 	enemy_bar.max_value = enemy_max
 	player_bar.value = player_max
 	enemy_bar.value = enemy_max
-	print("Max Bar", player_bar.max_value, enemy_bar.max_value)
+	print("Player Bar: ", player_bar.max_value, " Enemy Bar: ", enemy_bar.max_value)
 
 func _on_update_battle(player, enemy): # Connects to Battle Node.
 	player_bar.value = player
